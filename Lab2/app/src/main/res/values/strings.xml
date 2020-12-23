@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="tv_name">Nhập tên:</string>
+    <string name="et_name">Employee Name </string>
+    <string name="em_id">ID</string>
+    <string name="em_name">Name</string>
+    <string name="em_category">Category</string>
+    <string name="em_title">Staff Managerment</string>
+    <string name="em_fulltime">Full time</string>
+    <string name="em_parttime">Part time</string>
+    <string name="em_submit">Submit</string>
+    <string name="full_name">Full Name: </string>
+    <string name="is_manager">Is A Manager: </string>
+    <string name="staff">Staff</string>
+    <string name="add">Add</string>
+
+    <string name="promo">Promotion</string>
+    <string name="add_dish">Add new Dish</string>
+
+    <string name="name">Name:</string>
+    <string name="thumbnail">Thumbnail:</string>
+    <string name="promotion">Promotion:</string>
+    <string name="adddish">Add A New Dish</string>
+
+    <!--Thumbnail-->
+    <string name="thumbnail1">Thumbnail 1</string>
+    <string name="thumbnail2">Thumbnail 2</string>
+    <string name="thumbnail3">Thumbnail 3</string>
+    <string name="thumbnail4">Thumbnail 4</string>
+</resources>

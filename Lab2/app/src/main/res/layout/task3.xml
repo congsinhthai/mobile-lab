@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Task3.task3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/color_white"
+        android:background="@color/color_green"
+        android:text="@string/em_title"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/em_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_id"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_em_id"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="@id/tv_id"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_id"
+        android:layout_marginEnd="20dp"
+        android:hint="Type Employee ID"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_em_name"
+        android:text="@string/em_name"
+        app:layout_constraintStart_toStartOf="@id/tv_id"
+        app:layout_constraintTop_toBottomOf="@id/et_em_id"
+        android:layout_marginTop="20dp"
+
+/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_em_name"
+        android:hint="Type Employee name"
+        app:layout_constraintStart_toEndOf="@id/tv_em_name"
+        app:layout_constraintTop_toBottomOf="@id/et_em_id"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/tv_em_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_em_name"
+        android:layout_marginStart="80dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_cat"
+        android:text="@string/em_category"
+        app:layout_constraintStart_toStartOf="@id/tv_em_name"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/et_em_name"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/tv_cat"
+        app:layout_constraintTop_toTopOf="@id/tv_cat"
+        app:layout_constraintBottom_toBottomOf="@id/tv_cat"
+        android:layout_marginStart="100dp"
+        android:id="@+id/ra_group"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ra_fulltime"
+            android:text="@string/em_fulltime"
+        />
+
+        <RadioButton
+        android:id="@+id/ra_parttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/em_parttime"
+            android:layout_marginStart="20dp"
+        />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:text="@string/em_submit"
+        app:layout_constraintTop_toBottomOf="@id/ra_group"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_em"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit"
+        android:layout_marginTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab03</string>
+    <string name="title">Contact list</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="ph_number">Phone Number</string>
+    <string name="add_contact">Add Contact</string>
+</resources>
